@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Reem+Kufi+Fun&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Reem+Kufi+Fun:regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 
 div#banner{
@@ -11,13 +11,98 @@ div#banner img {
     border-radius: 32px;
 }
 
+
+
+#login {
+    
+        border: 1px;
+        border-radius: 16px;
+        padding: 20px;
+        width: 36%; 
+        height: 67%;
+        position: absolute;
+        top: 25%;
+        left: 32%;
+        
+    }
+
+
+
+.square-login {
+    width: 40%; 
+    height: 80%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background: #4e7f9eb2;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.4px);
+    -webkit-backdrop-filter: blur(11.4px);
+    border: 1px solid rgba(255, 255, 255, 0.795);
+}
+
+.square-login h1 {
+    text-align: center; 
+    font-family: lato;
+    margin-top: 4%;
+    color: #fff;
+}
+
+
 .perfil-img img{
     margin-top: -112px;
     margin-left: 10%;
     border-radius: 50%;
     object-fit: fill;
-        width: 160px;
-        height: 160px;
+    height: 220px;
+    width: 220px;
+    background: #f5fcff;
+    box-shadow: -105px -74px 0px 60px #0a65c2;
     z-index: 1;
 
 }
+
+.titulo-seccion {
+    margin-top: -112px;
+    margin-left: 48%;
+    color: #0c0c0c;
+    font-weight: 600;
+
+}
+
+.datos-personales h1{
+    padding-top: 5%;
+    margin-left: 10%;
+    color: #0a65c2;
+    font-weight: 600;
+}
+.titulo{
+    padding-top: 5px;
+    margin-left: 11%;
+    color: #0c0c0c;
+    font-weight: 600;
+    font-family: lato;
+}
+.ciudad{
+    padding-top: 5px;
+    margin-left: 12%;
+    color: #0c0c0c;
+    font-weight: 500;
+    font-family: lato;
+}
+.linea {
+    border-top: 1px solid #0a65c2;
+    height: 2px;
+    max-width: 35%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+ .texto-sobremi {
+
+    color: #0c0c0c;
+    margin-top: -150px;
+    margin-left: 48%;
+
+ }
