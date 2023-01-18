@@ -32,39 +32,93 @@
 
 </header>
 <body>
-   
+  <div class="section-box" >
        <div id="banner"> <img id="Banner-img" src="images/banner.jpg" alt="banner" width="100%" height="100%">
       <div class="btn-edit"></div> 
       </div>
+     <div id="inner-section-box" style=" padding: 16px;">
+        
+              <div class="perfil-img">
+                <img src="images/me.jpg" alt="perfil">
+                  <!-- <div  class="btn-edit" onclick="cambiar_foto()">
+                        <a href="#" class="btn-right">
+                        <i class="fa fa-pen"></i>
+                         </a>
+                      </div>-->
+              </div>
      
-      <div class="info" style="padding: 16px;">
-       <div class="perfil-img">
-        <img src="images/me.jpg" alt="perfil">
-         </div>
-      <div class="btn-edit"></div>
-      <div class="titulo-seccion"><h1>Sobre Mí</h1></div>
-      </div>
+          <div class="datos-personales">
+            <h1>Pedro Becerra</h1>
 
-      <div class="datos-personales">
-        <h1>Pedro Becerra</h1>
-
-         <div class="titulo">Técnico Superior en Multimedia</div>
-        <div class="ciudad">Rosario,Santa fe, Argentina</div>
+           <div class="titulo">Técnico Superior en Multimedia</div>
+           <div class="ciudad">Rosario,Santa fe, Argentina</div>
         
-        <div style="margin-left: 11%; margin-top: 2%;">
-          <button type="button" class="btn btn-primary">Tengo Interés en</button>
-        <button type="button" class="btn btn-light">Añadir Sección</button>
-        <button type="button" class="btn btn-light">Más</button>
+            <div id="perfil-btn">
+              <button type="button" class="btn btn-primary">Tengo Interés en</button>
+              <button type="button" class="btn btn-light">Añadir Sección</button>
+              <button type="button" class="btn btn-light">Más</button>
+            </div>
+          </div>
       </div>
-      <div class="linea"></div>
-      <div  class="texto-sobremi">
-        <input type="text"> 
-    </div>
+  </div>
+
+    <div class="section-box" style="padding: 16px;">
+        <div class="titulo-seccion">
+          <h2>Sobre Mí</h2>
+          <div  type="button"  class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right">
+            <i class="fa fa-pen"></i>
+          </a>
+           </div>
+          </div>
+
+      <div >
+        <p id="texto-sobremi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti praesentium, atque unde similique excepturi minima delectus iusto velit aperiam rerum alias, facere, laborum nemo laudantium sint doloremque. Debitis, officiis sit!</p>
+      </div>
+      <div>
+        <input id="edit-sobremi" type="text" oninput="ocultarInput(this.value)" style="display: none;"> 
+       </div>
         
     </div>
 
-
-
+    <script>
+      /*funcion que cambia visivilidad de caja de texto para editar secciones
+      toma el texto con id="texto-sobremi"
+      y lo muestra en consola
+      */
+      
+      function editar_parrafo(){
+      
+        document.getElementById("edit-sobremi").style.display = "block";
+        let texto = document.getElementById("texto-sobremi").innerText;
+        console.log(texto);
+      
+      };
+      
+      function ocultarInput(){
+      
+        document.getElementById("texto-sobremi").innerText=valor;
+      
+      };
+      
+      function logMessage(message) {
+        console.log(message + "<br>");
+      };
+      
+      //controla si presiono enter
+      
+      let textarea=document.getElementById("edit-sobremi")
+      textarea.addEventListener('keyup', (e) => {
+        logMessage('key "${e.key}" released [event: keyup]');
+        if (e.key=="Enter"){
+          document.getElementById("edit-sobremi").style.display = "none";
+        }
+      });
+      
+      
+      
+      
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
