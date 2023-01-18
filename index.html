@@ -26,7 +26,7 @@
            <a href="http://instagram.com/becerrapedro4"> <i class="bi-instagram mx-2" style="font-size: 1.5rem; color: #fff"></i></a>
            <a href="http://www.linkedin.com/in/becerrapedro2023"><i class="bi-linkedin mx-2" style="font-size: 1.5rem; color: #fff"></i></a>
            <a href="http://github.com/becerrapedro4"><i class="bi-github me-4 ms-2" style="font-size: 1.5rem; color: #fff"></i></a>
-                <a href="login.html"><button type="button" class="btn btn-light"  style="font-weight: bold; color: #1FFBE8;" >Login</button></a>
+                <a href="login.html"><button type="button" class="btn btn-light"  style="font-weight: bold; color: #3ca0f1;" >Login</button></a>
         </div>
       </nav>
 
@@ -40,11 +40,13 @@
         
               <div class="perfil-img">
                 <img src="images/me.jpg" alt="perfil">
-                  <!-- <div  class="btn-edit" onclick="cambiar_foto()">
-                        <a href="#" class="btn-right">
-                        <i class="fa fa-pen"></i>
-                         </a>
-                      </div>-->
+                
+                <div  class="btn-edit" onclick="cambiar_foto()">
+                      <a href="#" class="btn-right">
+                      <i class="fa fa-pen"></i>
+                       </a>
+                    </div>
+                    
               </div>
      
           <div class="datos-personales">
@@ -65,16 +67,15 @@
     <div class="section-box" style="padding: 16px;">
         <div class="titulo-seccion">
           <h2>Sobre Mí</h2>
-          <div class="btn-edit" onclick="cambiar_parrafo()">
-          <a href="#" class="btn-right">
-            <i class="fa fa-pen"></i>
-          </a>
-           </div>
+          <button type="button" class="btn-edit" onclick="editar_parrafo()">
+            <i class="bi-pen me-4 ms-2"></i>
+        </button>
           </div>
 
       <div >
-        <p id="texto-sobremi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti praesentium, atque unde similique excepturi minima delectus iusto velit aperiam rerum alias, facere, laborum nemo laudantium sint doloremque. Debitis, officiis sit!</p>
-      </div>
+        <p id="texto-sobremi">Cristiano Evangélico.
+          Me adapto de forma efectiva al trabajo en equipo.
+          Siempre dispuesto a aprender y mejorar</div>
       <div>
         <input id="edit-sobremi" type="text" oninput="ocultarInput(this.value)" style="display: none;"> 
        </div>
