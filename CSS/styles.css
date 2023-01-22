@@ -62,15 +62,16 @@ div#banner img {
 
 
 .datos-personales h1{
-    text-align: center;
+    
     font-family: lato;
     margin-top: -7%;
+    margin-left: 1%;
     color: #0a65c2;
     font-weight: 600;
 }
 .titulo{
     padding-top: 3px;
-    text-align: center;
+    
     color: #0c0c0c;
     font-weight: 600;
     font-family: lato;
@@ -78,7 +79,7 @@ div#banner img {
 .ciudad{
     padding-top: 3px;
     padding-bottom: 15px;
-    text-align: center;
+
     color: #0c0c0c;
     font-weight: 500;
     font-family: lato;
@@ -95,7 +96,7 @@ margin-left: 70%;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #0a65c2;
+    
 }
 
 
