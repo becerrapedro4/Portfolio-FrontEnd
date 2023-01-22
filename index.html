@@ -50,17 +50,16 @@
               </div>
      
           <div class="datos-personales">
-            <h1>Pedro Becerra</h1>
-
-           <div class="titulo">Técnico Superior en Multimedia</div>
-           <div class="ciudad">Rosario,Santa fe, Argentina</div>
-        
+            <div class="nombre titulo-seccion"> <h1>Pedro Becerra</h1></div>
+            <div class="titulo">Técnico Superior en Multimedia</div>
+            <div class="ciudad">Rosario,Santa fe, Argentina</div>
+          </div>
             <div id="perfil-btn">
               <button type="button" class="btn btn-primary">Tengo Interés en</button>
               <button type="button" class="btn btn-light">Añadir Sección</button>
               <button type="button" class="btn btn-light">Más</button>
             </div>
-          </div>
+          
       </div>
   </div>
 
@@ -75,13 +74,36 @@
       <div >
         <p id="texto-sobremi">Cristiano Evangélico.
           Me adapto de forma efectiva al trabajo en equipo.
-          Siempre dispuesto a aprender y mejorar</div>
+          Siempre dispuesto a aprender y mejorar.</p>
       <div>
         <input id="edit-sobremi" type="text" oninput="ocultarInput(this.value)" style="display: none;"> 
        </div>
-        
+      </div>
     </div>
 
+    <div class="section-box" style="padding: 16px;">
+    <div class="titulo-seccion"><h2>Experiencia Laboral</h2></div>
+
+        <div class="work-box" style="padding: 3px">
+        trabajo 1</div>
+      
+          
+          <div class="work-box" style="padding: 3px">
+            trabajo 2</div>
+            
+    
+    </div>
+
+    <div class="section-box" style="padding: 16px;">
+    <div class="titulo-seccion"><h2>Soft & Hard skills</h2></div>
+
+<div class="progress">
+skill progress</div>
+
+
+    </div>
+    
+    
     <script>
       /*funcion que cambia visivilidad de caja de texto para editar secciones
       toma el texto con id="texto-sobremi"
@@ -98,7 +120,7 @@
       
       function ocultarInput(){
       
-        document.getElementById("texto-sobremi").innerText=valor;
+        document.getElementById("texto-sobremi").innerText=document.getElementById("edit-sobremi").value;
       
       };
       

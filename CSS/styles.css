@@ -52,6 +52,7 @@ div#banner img {
     margin-top: -10%;
     margin-left: 5%;
     border-radius: 50%;
+    border: 2px solid #0a65c2;
     object-fit: fill;
     height:20%;
     width: 20%;
@@ -60,17 +61,21 @@ div#banner img {
 }
 
 
-
-.datos-personales h1{
+.datos-personales{
     text-align: center;
+}
+.datos-personales .nombre{
+    
     font-family: lato;
     margin-top: -7%;
+    margin-left: 3%;
     color: #0a65c2;
-    font-weight: 600;
+    font-size: large;
+    font-weight: 800;
 }
 .titulo{
     padding-top: 3px;
-    text-align: center;
+    
     color: #0c0c0c;
     font-weight: 600;
     font-family: lato;
@@ -78,7 +83,7 @@ div#banner img {
 .ciudad{
     padding-top: 3px;
     padding-bottom: 15px;
-    text-align: center;
+
     color: #0c0c0c;
     font-weight: 500;
     font-family: lato;
@@ -95,7 +100,7 @@ margin-left: 70%;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #0a65c2;
+    
 }
 
 
@@ -105,7 +110,7 @@ margin-left: 70%;
     color: #0c0c0c;
     text-align: center;
     font-family: lato;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
  .texto-sobremi {
